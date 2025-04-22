@@ -24,6 +24,18 @@ It is deployed automatically via [Vercel](https://vercel.com/).
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## UI Components (shadcn/ui)
+
+This project uses [shadcn/ui](https://ui.shadcn.com/) for its component library, built on top of Tailwind CSS and Radix UI.
+
+To add new components:
+
+```bash
+pnpm dlx shadcn@latest add [component-name]
+```
+
+Components will be added to the `src/components/ui` directory.
+
 You can start editing the page by modifying `src/app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.

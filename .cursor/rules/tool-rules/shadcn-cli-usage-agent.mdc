@@ -1,0 +1,29 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Shadcn CLI Usage
+
+## Critical Rules
+
+- ALWAYS use `pnpm dlx shadcn@latest <command>` (or `npx shadcn@latest <command>`).
+- NEVER use the deprecated `pnpm dlx shadcn-ui@latest <command>`.
+- If the user mentions `shadcn-ui`, inform them about the deprecation and use the correct `shadcn` command.
+
+## Examples
+
+<example>
+  ```bash
+  # User asks to add a button
+  pnpm dlx shadcn@latest add button
+  ```
+</example>
+
+<example type="invalid">
+  ```bash
+  # User asks to initialize shadcn (based on previous error)
+  pnpm dlx shadcn-ui@latest init
+  # Output: The 'shadcn-ui' package is deprecated...
+  ```
+</example>
