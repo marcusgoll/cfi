@@ -1,0 +1,14 @@
+[
+    {
+        "id": "notif_001",
+        "message": "New report 'Q1 Summary' is available.",
+        "read": false,
+        "timestamp": "2024-04-22T10:00:00Z"
+    },
+    {
+        "id": "notif_002",
+        "message": "Student 'Bob Williams' login detected.",
+        "read": true,
+        "timestamp": "2024-04-22T08:31:00Z"
+    }
+]

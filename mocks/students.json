@@ -1,0 +1,20 @@
+[
+    {
+        "id": "std_001",
+        "name": "Alice Johnson",
+        "grade": "A",
+        "last_login": "2024-04-21T10:00:00Z"
+    },
+    {
+        "id": "std_002",
+        "name": "Bob Williams",
+        "grade": "B+",
+        "last_login": "2024-04-22T08:30:00Z"
+    },
+    {
+        "id": "std_003",
+        "name": "Charlie Brown",
+        "grade": "A-",
+        "last_login": "2024-04-22T11:15:00Z"
+    }
+]

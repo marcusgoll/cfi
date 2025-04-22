@@ -16,6 +16,8 @@ It is deployed automatically via [Vercel](https://vercel.com/).
     ```bash
     cp .env.example .env.local
     ```
+    Currently, the main variable is:
+    - `NEXT_PUBLIC_USE_MOCK=1`: Set this to `1` to use mock data hooks (fetching from `/mocks/*.json`). Omit or set to `0` to attempt real API calls (not yet implemented).
 
 3.  **Run the Development Server:**
     ```bash

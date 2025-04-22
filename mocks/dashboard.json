@@ -1,0 +1,24 @@
+{
+    "summary_cards": [
+        {
+            "title": "Active Students",
+            "value": "152",
+            "change": "+12%"
+        },
+        {
+            "title": "Reports Generated",
+            "value": "35",
+            "change": "-5%"
+        },
+        {
+            "title": "Pending Actions",
+            "value": "3",
+            "change": "+1"
+        }
+    ],
+    "recent_activity": [
+        "Alice Johnson logged in.",
+        "Q1 Performance Summary generated.",
+        "Settings updated by admin."
+    ]
+}
