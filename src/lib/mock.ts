@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react'; // Unused imports removed
 
 // Simple hook to check the environment variable
 export function useIsMock(): boolean {
