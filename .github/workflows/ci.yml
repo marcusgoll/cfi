@@ -44,6 +44,12 @@ jobs:
       - name: Lint project
         run: pnpm lint # Runs 'next lint' as defined in package.json
 
+      - name: Type Check
+        run: pnpm typecheck
+
+      - name: Run Tests (Placeholder)
+        run: pnpm test
+
       - name: Build project
         run: pnpm build
 

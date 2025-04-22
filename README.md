@@ -1,5 +1,7 @@
 # cfi-pros
 
+[![CFI Pros CI](https://github.com/marcusgoll/cfi/actions/workflows/ci.yml/badge.svg)](https://github.com/marcusgoll/cfi/actions/workflows/ci.yml)
+
 This is the front-end application for CFI Professionals, built with [Next.js](https://nextjs.org) 15 (App Router), TypeScript, and Tailwind CSS.
 
 It is deployed automatically via [Vercel](https://vercel.com/).
