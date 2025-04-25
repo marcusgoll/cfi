@@ -1,35 +1,38 @@
-import type { Config } from "tailwindcss";
-import colors from 'tailwindcss/colors';
+import type { Config } from "tailwindcss"
 
-const config: Config = {
+const config = {
+    darkMode: ["class"],
     content: [
-        "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-        "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-        "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+        "./pages/**/*.{ts,tsx}",
+        "./components/**/*.{ts,tsx}",
+        "./app/**/*.{ts,tsx}",
+        "./src/**/*.{ts,tsx}",
+        "*.{js,ts,jsx,tsx,mdx}",
     ],
+    prefix: "",
     theme: {
+        container: {
+            center: true,
+            padding: "2rem",
+            screens: {
+                "2xl": "1400px",
+            },
+        },
         extend: {
             colors: {
-                // Project specific colors based on Story 0.2
-                primary: colors.blue['600'],       // Example: Blue 600
-                secondary: colors.amber['500'],    // Example: Amber 500
-                success: colors.green['500'],     // Example: Green 500
-                error: colors.red['600'],         // Example: Red 600
-                neutral: colors.gray,            // Example: Full Gray scale
-                // shadcn/ui colors (will be extended by shadcn init)
+                primary: {
+                    DEFAULT: "#0069FF",
+                    foreground: "#FFFFFF",
+                },
+                secondary: {
+                    DEFAULT: "#F59E0B",
+                    foreground: "#FFFFFF",
+                },
                 border: "hsl(var(--border))",
                 input: "hsl(var(--input))",
                 ring: "hsl(var(--ring))",
                 background: "hsl(var(--background))",
                 foreground: "hsl(var(--foreground))",
-                // primary: {
-                //   DEFAULT: "hsl(var(--primary))",
-                //   foreground: "hsl(var(--primary-foreground))",
-                // },
-                // secondary: {
-                //   DEFAULT: "hsl(var(--secondary))",
-                //   foreground: "hsl(var(--secondary-foreground))",
-                // },
                 destructive: {
                     DEFAULT: "hsl(var(--destructive))",
                     foreground: "hsl(var(--destructive-foreground))",
@@ -50,6 +53,9 @@ const config: Config = {
                     DEFAULT: "hsl(var(--card))",
                     foreground: "hsl(var(--card-foreground))",
                 },
+            },
+            fontFamily: {
+                heading: ["Inter", "sans-serif"],
             },
             borderRadius: {
                 lg: "var(--radius)",
@@ -72,6 +78,7 @@ const config: Config = {
             },
         },
     },
-    plugins: [require("tailwindcss-animate")], // Required for shadcn/ui animations
-};
-export default config; 
+    plugins: [require("tailwindcss-animate")],
+} satisfies Config
+
+export default config
